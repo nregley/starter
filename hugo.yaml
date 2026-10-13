@@ -4,3 +4,22 @@ module:
 
 title: La Ferme du Moulin Neuf
 baseURL: /
+
+# Autorisations de sécurité pour Tailwind et Preact
+security:
+  exec:
+    allow:
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^postcss$'
+      - '^tailwindcss$'
+  node:
+    permissions:
+      allowAddons:
+        - 'tailwindcss'
+      allowChildProcess:
+        - 'tailwindcss'
+      allowWorker:
+        - 'tailwindcss'
