@@ -13,8 +13,15 @@ jobs:
           hugo-version: '0.165.0'
           extended: true
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Install Tailwind CSS
-        run: npm install -g tailwindcss
+        run: |
+          npm install -D tailwindcss postcss autoprefixer
+          echo "$(npm bin)" >> $GITHUB_PATH
 
       - run: hugo --minify
 
