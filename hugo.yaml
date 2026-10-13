@@ -24,9 +24,13 @@ security:
       allowWorker:
         - 'tailwindcss'
 
-# Indiquer à Hugo que Tailwind est un binaire autonome
+# Configuration pour Tailwind autonome et Preact
 build:
   binaries:
     tailwindcss:
       command: tailwindcss
       is_node_script: false
+  jsConfig:
+    compilerOptions:
+      jsx: react-jsx
+      jsxImportSource: preact
