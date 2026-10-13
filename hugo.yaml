@@ -1,0 +1,4 @@
+import:
+  - path: github.com/HugoBlox/kit/modules/blox
+title: La Ferme du Moulin Neuf
+baseURL: /
