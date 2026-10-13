@@ -5,7 +5,7 @@ module:
 title: La Ferme du Moulin Neuf
 baseURL: /
 
-# Autorisations de sécurité pour Tailwind et Preact
+# Autorisations de sécurité
 security:
   exec:
     allow:
@@ -23,3 +23,10 @@ security:
         - 'tailwindcss'
       allowWorker:
         - 'tailwindcss'
+
+# Indiquer à Hugo que Tailwind est un binaire autonome
+build:
+  binaries:
+    tailwindcss:
+      command: tailwindcss
+      is_node_script: false
