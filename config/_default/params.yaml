@@ -1,0 +1,18 @@
+# Configuration du site La Ferme du Moulin Neuf
+site_name: La Ferme du Moulin Neuf
+
+# Thème : "minimal" est propre, "forest" serait idéal pour vous si disponible
+theme:
+  pack: minimal
+  
+# Barre de navigation
+header:
+  navbar:
+    enable: true
+    fixed: true
+    show_logo: true
+
+# Pied de page
+footer:
+  copyright: "© {year} La Ferme du Moulin Neuf. Tous droits réservés."
+  
